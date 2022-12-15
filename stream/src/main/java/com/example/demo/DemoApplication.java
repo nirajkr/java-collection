@@ -1,20 +1,39 @@
-package com.example.demo;
+package com.example.stream;
 
-import java.util.*;
-import java.util.stream.*;
-import org.springframework.boot.SpringApplication;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class DemoApplication {
 
+	
+
 	public static void main(String[] args) {
 
-		sumOfEvenNumber();
-		convertListToOther();
-		filterList();
-		findElement();
-		findMaxMin();
+		//sumOfEvenNumber();
+		//convertListToOther();
+		//filterList();
+		//findElement();
+		//findMaxMin();
+		strManipulation();
+		
+	}
+	
+	
+	
+	public static void strManipulation()
+	{
+		StringManipulation strManipulation = new StringManipulation();
+		strManipulation.countWorks();
+	
 	}
 	
 
